@@ -1,0 +1,47 @@
+.bar.bar-light {
+  background-color: rgba(255,255,255, 0) !important;
+  background-size: 0;
+  .button-icon {
+    color: $light;
+  }
+  .title {
+    color: $light;
+  }
+}
+.scroll-content {
+  overflow: visible !important;
+}
+
+
+.artist-cover {
+  padding: 2vh 0 2vh 0;
+  .artist-image {
+    border-radius: 50%;
+    border: 5px solid $light;
+  }
+}
+
+.description-music {
+  padding: 2vh;
+}
+
+.player-music {
+  width: 100%;
+  display: inline-table;
+  i {
+    line-height: 15vh;
+    vertical-align: middle;
+  }
+  .audio-slider {
+    position: absolute;
+    transform: rotate(-90deg);
+    border-radius: 10px;
+    margin-top: -45%;
+    width: 40%;
+    right: 4%;
+  }
+}
+
+.banner-event {
+  width: 90%; margin-left: 5%
+}

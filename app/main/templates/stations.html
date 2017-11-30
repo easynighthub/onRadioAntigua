@@ -1,0 +1,17 @@
+<ion-view style="background: black">
+  <ion-content scroll="false">
+    <div class="text-center">
+      <img class="height-35vh" src="main/assets/images/app/icon-main.png" style="margin-top: 10%" />
+    </div>
+    <div class="row" ng-repeat="station in ctrl.stations" ng-click="ctrl.navigate(station)">
+      <div class="col col-40 text-right">
+        <img ng-src="{{ station.icon }}" style="height: 15vh;">
+      </div>
+      <div class="col col-60">
+        <div class="wrapper-station-description" style="display: inline-table; height: 100%">
+          <p class="light" style="display: table-cell; vertical-align: middle;">{{ station.description }}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

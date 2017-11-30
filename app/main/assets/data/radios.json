@@ -1,0 +1,35 @@
+[
+  {
+    "code": "radio-femme",
+    "name": "femme",
+    "enabled": true,
+    "url": "http://198.50.154.235:10264/;stream/1",
+    "url_metadata": "http://198.50.154.235:10264",
+    "icon": "main/assets/images/app/icon-femme.png",
+    "icon_IOS_Background": "http://www.femme.cl/Femme1.jpg",
+    "logo": "main/assets/images/radio-femme/background_femme.jpg",
+    "description": "ESCUCHA AQUÍ LOS EXITOS PARA LA MUJER"
+  },
+  {
+    "code": "radio-cool",
+    "name": "cool",
+    "enabled": true,
+    "url": "http://198.50.154.235:9300/;stream/1",
+    "url_metadata": "http://198.50.154.235:9300",
+    "icon": "main/assets/images/app/icon-cool.png",
+    "icon_IOS_Background": "https://scontent.fsst1-2.fna.fbcdn.net/v/t1.0-9/15253366_573660636165156_473511875140901225_n.jpg?oh=a72e28eb26cf30790aedd7f0b581c110&oe=59319F6A",
+    "logo": "main/assets/images/radio-femme/background_cool.jpg",
+    "description": "ESCUCHA AQUÍ LOS EXITOS POP, REGGAETON Y EDM"
+  },
+  {
+    "code": "radio-8090",
+    "name": "8090",
+    "enabled": true,
+    "url": "http://198.50.154.235:10250",
+    "url_metadata": "http://198.50.154.235:10250",
+    "icon": "main/assets/images/app/icon-8090.png",
+    "icon_IOS_Background": "http://8090.cl/wp-content/uploads/2016/10/Captura-de-pantalla-2016-10-17-a-las-12.17.59-a.m.-713x540.png",
+    "logo": "",
+    "description": "ESCUCHA AQUÍ LOS EXITOS DE LOS 80 Y 90"
+  }
+]

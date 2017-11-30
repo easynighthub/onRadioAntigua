@@ -1,0 +1,9 @@
+@mixin stations-color-helper($color-name, $color) {
+  .#{$color-name}, a.#{$color-name} { color: $color; }
+  .#{$color-name} path { fill: $color; }
+  .#{$color-name}-bg { background-color: $color; }
+  .#{$color-name}-transparentize-20 { background-color: transparentize($color, 0.2); }
+  .#{$color-name}-transparentize-50 { background-color: transparentize($color, 0.5); }
+  .#{$color-name}-transparentize-80 { background-color: transparentize($color, 0.8); }
+  .#{$color-name}-transparentize-90 { background-color: transparentize($color, 0.9); }
+}

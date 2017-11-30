@@ -1,0 +1,40 @@
+.font-1vh {
+  font-size: 1vh;
+  line-height: 2vh;
+}
+
+.font-2vh {
+  font-size: 2vh;
+  line-height: 3vh;
+}
+
+.font-3vh {
+  font-size: 3vh;
+  line-height: 4vh;
+}
+
+.font-4vh {
+  font-size: 4vh;
+  line-height: 5vh;
+}
+
+.font-5vh {
+  font-size: 5vh;
+  line-height: 6vh;
+}
+
+.font-10vh {
+  font-size: 10vh;
+  line-height: 11vh;
+}
+
+@for $i from 1 through 20 {
+  .height-#{$i * 5}vh {
+    height: $i * 5vh;
+  }
+}
+
+.full-image { width: 100%; }
+.bold { font-weight: bold; }
+.no-margin { margin: 0; }
+.no-border { border: none; }

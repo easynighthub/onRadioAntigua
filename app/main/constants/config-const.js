@@ -1,0 +1,15 @@
+'use strict';
+angular.module('main')
+.constant('Config', {
+
+  ENV: {
+    'ANDROID': {
+      'LINK': 'https://play.google.com/store/apps/details?id=com.onradio.streaming',
+      'MESSAGE': 'Conoce la nueva forma de escuchar radio. Descarga OnRadio y descubre: Radio Femme, la radio de la mujer; Radio Cool, el mejor Pop, Reggaeton, y EDM; Radio 8090, los mejores exitos de los 80 y 90.'
+    },
+    'IOS': {
+      'LINK': 'https://itunes.apple.com/cl/app/onradio-chile/id1202055652?mt=8',
+      'MESSAGE': 'Conoce la nueva forma de escuchar radio. Descarga OnRadio y descubre: Radio Femme, la radio de la mujer; Radio Cool, el mejor Pop, Reggaeton, y EDM; Radio 8090, los mejores exitos de los 80 y 90.'
+    }
+  }
+});

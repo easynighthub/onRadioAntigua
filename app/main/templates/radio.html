@@ -1,0 +1,11 @@
+<ion-view hide-nav-bar="true"
+          ng-class="{ 'femme-brand-pink-dark-bg' : ctrl.radio.name == 'femme',
+                      'cool-brand-blue-dark-bg' : ctrl.radio.name == 'cool',
+                      'station-8090-brand-dark-orange-bg' : ctrl.radio.name == '8090' }">
+  <div ng-if="ctrl.radio.name == 'femme'" ng-include="'main/templates/radio/femme.html'">
+  </div>
+  <div ng-if="ctrl.radio.name == 'cool'" ng-include="'main/templates/radio/cool.html'">
+  </div>
+  <div ng-if="ctrl.radio.name == '8090'" ng-include="'main/templates/radio/8090.html'">
+  </div>
+</ion-view>

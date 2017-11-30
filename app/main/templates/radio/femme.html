@@ -1,0 +1,33 @@
+<ion-header-bar class="bar-light" align-title="center">
+  <button class="button button-icon ion-ios-arrow-left" ng-click="ctrl.goBack()"></button>
+  <h1 class="title">
+    {{ ctrl.stream.info }}
+  </h1>
+  <button ng-if="!ctrl.isVolumeControl" class="button button-icon light ion-android-share-alt" on-touch="ctrl.sharing()"></button>
+</ion-header-bar>
+<ion-content scroll="false">
+  <div class="artist-cover text-center">
+    <img class="height-35vh artist-image" ng-src="{{ ctrl.song.coverUrl || 'main/assets/images/radio-femme/logo_femme.png' }}" />
+  </div>
+  <div class="description-music text-center light-transparentize-80">
+    <p class="font-4vh light">{{ ctrl.track | capitalize }}</p>
+    <p class="font-2vh light no-margin">{{ ctrl.artist }}</p>
+  </div>
+  <div class="player-music text-center">
+    <i class="icon font-5vh light ion-android-share-alt"
+       ng-if="ctrl.isVolumeControl"
+       on-touch="ctrl.sharing()"></i>
+    <i class="icon font-10vh light"
+       ng-class="ctrl.stream.isPlaying ? 'ion-pause' : 'ion-play'"
+       ng-click="ctrl.stream.togglePlay()"
+       style="padding: 0 18vw;"></i>
+    <i class="icon font-5vh light"
+       ng-if="ctrl.isVolumeControl"
+       ng-click="ctrl.slider.show = !ctrl.slider.show"
+       ng-class="{ 'ion-volume-high' : ctrl.slider.volume > 80 && ctrl.slider.volume, 'ion-volume-medium' : ctrl.slider.volume > 30 && ctrl.slider.volume <= 80, 'ion-volume-low' : ctrl.slider.volume > 0 && ctrl.slider.volume <= 30, 'ion-volume-mute' : ctrl.slider.volume == 0 }" ></i>
+    <div class="item range audio-slider no-border" ng-show="ctrl.slider.show">
+      <input type="range" name="ctrl.slider.volume" ng-model="ctrl.slider.volume" ng-init="ctrl.slider.volume=100" ng-change="ctrl.setVolume()">
+    </div>
+  </div>
+  <img class="banner-event" src="main/assets/images/radio-femme/banner.png" />
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <!-- CONTENT -->
+  <ion-side-menu-content>
+
+    <!-- header bar -->
+    <!-- the nav bar will be updated as we navigate between views -->
+    <ion-nav-bar class="bar-light">
+      <!-- back button, shown if applicable -->
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <!-- nav button, shown if applicable -->
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!-- ROUTING INJECTED HERE: pageContent -->
+    <ion-nav-view name="pageContent"></ion-nav-view>
+
+  </ion-side-menu-content>
+
+  <!-- SIDEMENU -->
+  <ion-side-menu side="left">
+
+    <!-- menu header -->
+    <ion-header-bar class="onradio-brand-black1-bg">
+      <h1 class="title light">Menú</h1>
+    </ion-header-bar>
+
+    <!-- menu content -->
+    <ion-content class="onradio-brand-black2-bg">
+      <div class="list" style="border: none">
+        <div class="item font-3vh onradio-brand-black2-bg light" menu-close ng-click="ctrl.goSite()" style="border: none">
+          <i class="icon ion-earth"></i>
+          <span class="padding-left">Ir al sitio</span>
+        </div>
+        <div class="item font-3vh onradio-brand-black2-bg light" menu-close ng-click="" style="border: none">
+          <i class="icon ion-calendar"></i>
+          <span class="padding-left">Eventos</span>
+        </div>
+        <div class="item font-3vh onradio-brand-black2-bg light" menu-close style="border: none">
+          <i class="icon ion-social-whatsapp"></i>
+          <span class="padding-left">Comunicate</span>
+        </div>
+      </div>
+    </ion-content>
+
+  </ion-side-menu>
+
+</ion-side-menus>
